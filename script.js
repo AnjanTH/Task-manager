@@ -15,7 +15,7 @@ btn.onclick = function () {
     let inputdate=dates.value;
     eventdate.push(inputdate);
     localStorage.setItem('datevent',JSON.stringify(eventdate))
-    dates.value="";
+    dates.value="Date";
 
     displayitems()
  
