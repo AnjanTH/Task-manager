@@ -1,0 +1,270 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    background-color: rgb(199, 218, 218);
+}
+
+.container {
+    width: 100vw;
+    position: relative;
+    top: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgb(199, 218, 218);
+}
+
+h1 {
+
+    position: relative;
+    top: -80px;
+
+    color: rgb(6, 39, 39);
+    font-weight: 700;
+    font-size: 40px;
+}
+
+.in {
+    font-size: 20px;
+    padding: 15px;
+    margin-right: 25px;
+    border-radius: 10px;
+    border: none;
+
+    letter-spacing: 1.5px;
+
+}
+
+#date {
+    font-size: 20px;
+    padding: 14px;
+    margin-left: 20px;
+    border-radius: 10px;
+    border: none;
+    color: rgb(72, 108, 179);
+}
+
+.in:hover {
+    cursor: pointer;
+    border: 2px solid rgb(255, 72, 0);
+}
+
+#date:hover {
+    cursor: pointer;
+    border: 2px solid rgb(212, 40, 235);
+    color: rgb(74, 72, 72);
+}
+
+h1::after {
+    content: '';
+    width: 150px;
+    height: 3px;
+    background: linear-gradient(to right, #4c279c, #c33b9a);
+    position: absolute;
+    top: 55px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+#btn {
+    font-size: 20px;
+    padding: 15px;
+    margin-left: 20px;
+    border-radius: 10px;
+    border: none;
+    width: 100px;
+    background-color: green;
+    color: aliceblue;
+}
+
+#btn:hover {
+    background-color: blue;
+    cursor: pointer;
+}
+
+h3 {
+    position: relative;
+    color: #c33b9a;
+    top: 20px;
+}
+
+p {
+    font-size: 20px;
+    position: relative;
+    top: 20px;
+}
+
+.cont {
+    position: relative;
+    top: 40px;
+    width: 60%;
+    background: rgb(255, 255, 255);
+    background: linear-gradient(90deg, rgb(243, 246, 248) 7%, rgb(238, 240, 245) 27%, rgb(235, 245, 245) 49%, rgb(223, 238, 239) 100%);
+    border-radius: 20px;
+    display: grid;
+    grid-template-columns: 200px 250px 100px;
+  row-gap: 1.5rem;
+    align-items: center;
+    place-content: center;
+    padding: 40px;
+
+    box-shadow: -10px 15px 75px rgba(0, 0, 0, 0.5);
+
+}
+
+.spanned {
+    color: rgb(85, 69, 85);
+    /* margin: 20px; */
+    font-size: 20px;
+}
+
+.butt {
+    background-color: rgb(230 19 19);
+    border: none;
+    width: 100px;
+    padding: 15px;
+    border-radius: 10px;
+    color: white;
+    font-size: 17px;
+}
+
+.butt:hover {
+    cursor: pointer;
+    background-color: aliceblue;
+    border: 2px solid black;
+    color: black;
+}
+
+@media screen and (max-width:675px) {
+    .cont {
+        width: 80%;
+    }
+
+}
+
+@media screen and (max-width:1206px) {
+    .cont {
+        width: 80%;
+        grid-template-columns: 200px 200px 100px;
+        row-gap: 1rem;
+    }
+
+}
+
+@media screen and (max-width:696px) {
+    .auto {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    #date {
+        margin-left: 0px;
+        width: 275px;
+    }
+
+    #btn {
+        margin-left: 0px;
+    }
+}
+
+@media screen and (max-width:613px) {
+    .cont {
+        width: 85%;
+        grid-template-columns: 150px 90px 70px;
+        row-gap: 0.5rem;
+    }
+
+    .spanned {
+
+        font-size: 15px;
+    }
+
+    .butt {
+
+
+        width: 70px;
+        padding: 5px;
+        border-radius: 10px;
+        color: white;
+        font-size: 12px;
+    }
+
+    .in {
+        font-size: 15px;
+        padding: 12px;
+        width: 200px;
+        margin-right: 25px;
+        border-radius: 10px;
+        border: none;
+        height: 36px;
+        letter-spacing: 1.5px;
+
+    }
+
+    #date {
+        font-size: 15px;
+        padding: 10px;
+        width: 200px;
+        height: 36px;
+
+    }
+
+    #btn {
+        font-size: 15px;
+        padding: 10px;
+
+        width: 90px;
+
+
+    }
+}
+
+@media screen and (max-width:375px) {
+    .cont {
+        width: 90%;
+        grid-template-columns: 105px 90px 70px;
+        place-content: center;
+
+    }
+
+    .spanned {
+
+        font-size: 12px;
+    }
+
+    .butt {
+
+
+        width: 50px;
+        padding: 4px;
+        border-radius: 10px;
+        color: white;
+        font-size: 12px;
+    }
+}
+
+.foot {
+    position: relative;
+    top: 350px;
+    text-align: center;
+    width: 100%;
+    height: 50px;
+
+    background: rgb(43, 42, 42);
+
+}
+
+.foot h3 {
+    color: rgb(220, 217, 217);
+    font-size: 10px;
+}
