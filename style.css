@@ -51,6 +51,7 @@ h1 {
     border-radius: 10px;
     border: none;
     color: rgb(72, 108, 179);
+     background-color: white;
 }
 
 .in:hover {
@@ -117,7 +118,7 @@ p {
     place-content: center;
     padding: 40px;
 
-    box-shadow: -10px 15px 75px rgba(0, 0, 0, 0.5);
+  box-shadow: -10px 10px 40px rgba(0, 0, 0, 0.4);
 
 }
 
@@ -229,7 +230,7 @@ p {
     }
 }
 
-@media screen and (max-width:375px) {
+@media screen and (max-width:377px) {
     .cont {
         width: 90%;
         grid-template-columns: 105px 90px 70px;
@@ -250,6 +251,12 @@ p {
         border-radius: 10px;
         color: white;
         font-size: 12px;
+    }
+      .in{
+        width: 250px;
+    }
+    #date{
+        width: 250px;
     }
 }
 
